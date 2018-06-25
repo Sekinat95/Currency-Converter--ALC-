@@ -1,0 +1,17 @@
+body {
+    font-family: 'Tangerine', serif;
+    font-size: 2em;
+}
+.nav {
+    background-color: azure;
+}
+#app, #about {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+#my-image{
+    max-height: 500px;
+    
+    opacity: 0.5;
+    filter: alpha (opacity=50);
+}

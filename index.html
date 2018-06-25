@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>7 Days of Code Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+   
+</head>
+<body>
+        <ul class="nav nav-tabs justify-content-center ">
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Currency Converter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Me</a>
+                </li>
+        </ul>
+        <br>
+<section id="app" >
+        <div class="container">
+                <div class="card">
+                    <div class="justify-content-center">Currency Converter</div>
+                    <div class="card-body" >
+                      <div class="input-group">
+                        <input id="input-fi" type="text" class="form-control"  >
+                        <select class="custom-select" >
+                          <option value="1">USD</option>
+                          <option value="2">NGN</option>
+                          <option value="3">YEN</option>
+                        </select>
+                          <input type="text" class="form-control  " disabled value="TO" >
+                          <select class="custom-select" >
+                            <option value="1">USD</option>
+                            <option value="2">NGN</option>
+                            <option value="3">YEN</option>
+                          </select>
+                          
+                          <button id="convert" class="btn btn-secondary" type="submit" >CONVERT</button>
+                          &nbsp;&nbsp;&nbsp;&nbsp; <input id="display" type="text" value='' class="form-control" >
+                      </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<br>
+<section id="about" class="" >
+  <div class="row">
+      <div class=" col-md-12  bg-light text-muted">
+          <img id="my-image" class="card-img" src="imgs/IMG_20180506_224521_813.jpg" alt="yahya_sekinat">
+          <div class="card-img-overlay">
+            <br>
+            <p class="lead-in">
+              Hello, I'm Sekinah. Intermediate web developer on the ALC web cohort. currently seeking opportunities for learning, collaboration and hire. 
+            </p>
+            
+          </div>
+        </div>
+  </div>
+</section>
+<section id="contacts">
+  <span class="fa fa-envelope">sekinat95@gmail.com</span>
+  <span class="fa fa-git"><a href="www.github.com/sekinat95"></a></span>
+  <span class="fa fa-linkedi"><a href="#"></a></span>
+  <span class="fa fa-twitter"><a href="www.twitter.com/s_akina_h"></a></span>
+  <span class="fa fa-instagram"><a href="www.instagram.com/s.akina"></a></span>
+  <span class="fa fa-facebook"><a href="#"></a></span>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
