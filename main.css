@@ -2,6 +2,12 @@ body {
     font-family: 'Tangerine', serif;
     font-size: 2em;
 }
+#logo {
+max-width: 50px;
+max-height: 50px;
+float: left;
+position: relative;
+}
 .nav {
     background-color: azure;
 }
@@ -14,4 +20,8 @@ body {
     
     opacity: 0.5;
     filter: alpha (opacity=50);
+}
+#contacts {
+    background-color: azure;
+    font-size: 16px;
 }

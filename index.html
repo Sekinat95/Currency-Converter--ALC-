@@ -7,23 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
    
 </head>
 <body>
         <ul class="nav nav-tabs justify-content-center ">
                 <li class="nav-item">
-                  <a class="nav-link " href="#">Currency Converter</a>
+                  <a id="logo" class="navbar-brand  " href="#"><img class="img-responsive img-fluid" src="imgs/currency.png" alt="logo" ></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Me</a>
+                  <a class="nav-link " href="#app">Currency Converter</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Me</a>
+                  <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacts">Contact Me</a>
                 </li>
         </ul>
         <br>
-<section id="app" >
+<section id="app" name="app" >
         <div class="container">
                 <div class="card">
                     <div class="justify-content-center">Currency Converter</div>
@@ -50,7 +54,7 @@
             </div>
 </section>
 <br>
-<section id="about" class="" >
+<section id="about" name="about" >
   <div class="row">
       <div class=" col-md-12  bg-light text-muted">
           <img id="my-image" class="card-img" src="imgs/IMG_20180506_224521_813.jpg" alt="yahya_sekinat">
@@ -64,13 +68,20 @@
         </div>
   </div>
 </section>
-<section id="contacts">
-  <span class="fa fa-envelope">sekinat95@gmail.com</span>
-  <span class="fa fa-git"><a href="www.github.com/sekinat95"></a></span>
-  <span class="fa fa-linkedi"><a href="#"></a></span>
-  <span class="fa fa-twitter"><a href="www.twitter.com/s_akina_h"></a></span>
-  <span class="fa fa-instagram"><a href="www.instagram.com/s.akina"></a></span>
-  <span class="fa fa-facebook"><a href="#"></a></span>
+
+<section id="contacts" name="contacts" >
+  <br>
+  <div class=" text-center">
+      <i class="fa fa-envelope-o">sekinat95@gmail.com</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-github"><a href="www.github.com/sekinat95"></a></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-linkedin"><a href="linkedin.com/in/sekinat-oluwakunmi-yahya-15291812a"></a></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-twitter"><a href="https://twitter.com/s_akina_h"></a></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-instagram"><a href="https://www.instagram.com/s.akinah/"></a></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-facebook-official"><a href="https://web.facebook.com/kunmi.alabi.1"></a></i>
+</div>
+<div id="footer" class="text-center" >
+  &copy;2018, sekinat yahya
+</div>
 </section>
 
 <script src="main.js"></script>
