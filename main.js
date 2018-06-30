@@ -28,6 +28,10 @@ endCurr.forEach(function(endCurr, index){
 
 toSel.appendChild(fragmentCopy);
 
+//change color of button
+var button = document.getElementById('convert');
+button.setAttribute('class','btn-success');
+
 //get user input and selected currency from the 'input-fi' input
 var inputField = document.getElementById('input-fi');
 //console.log(inputField);
@@ -46,7 +50,7 @@ inputField.addEventListener('keyup', function(event){
 
     //display result
 
-    
+
 });
 
 //
