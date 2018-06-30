@@ -29,10 +29,25 @@ endCurr.forEach(function(endCurr, index){
 toSel.appendChild(fragmentCopy);
 
 //get user input and selected currency from the 'input-fi' input
-var inputField = document.getElementById('input-fi').value;
+var inputField = document.getElementById('input-fi');
+//console.log(inputField);
 
+inputField.addEventListener('keyup', function(event){
+    event.preventDefault();
+    
+    //get input value
+    console.log(inputField.value);
 
-console.log(inputField);
+    //choose input currency
+
+    //choose output currency
+
+    //run conversion formula
+
+    //display result
+
+    
+});
 
 //
 
