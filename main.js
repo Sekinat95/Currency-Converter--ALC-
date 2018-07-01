@@ -74,11 +74,11 @@ window.addEventListener('DOMContentLoaded', function(){
     
                     return tx.complete;
                   }).then(() => {
-                    console.log('Rates saved to database');
+                    console.log('conversion rates saved to database');
                   });
     
                   // display the result
-                  output.innerHTML = total;
+                  output.value = total;
                 }
               })
               .catch(e => {
