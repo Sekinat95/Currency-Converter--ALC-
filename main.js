@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', function(){
           error.innerHTML = 'input  is empty';
           inputVal.classList.add('is-invalid');
         } else {
-          convertCurrency(parseInt(inputVal.value), from.value, to.value);
+          convert(parseInt(inputVal.value), from.value, to.value);
         }
       });
 
