@@ -16,16 +16,16 @@ window.addEventListener('DOMContentLoaded', function(){
   fetch(url)
     .then(res => res.json())
     .then( data => {
-      let temp = '';
+      let dummy = '';
 
       Object.values(data.results).map(currency => {
-        temp += `
+        dummy += `
           <option value="${currency['id']}">${currency['id']} - ${currency['currencyName']}</option>
         `;
       });
 
-      from.innerHTML = temp;
-      to.innerHTML = temp ;
+      from.innerHTML = dummy;
+      to.innerHTML = dummy ;
     })
     .catch(err => console.log(err));
 
