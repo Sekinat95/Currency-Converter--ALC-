@@ -148,7 +148,16 @@ window.addEventListener('DOMContentLoader', function(){
   
   
 
+      btn.addEventListener('click', () => {
 
+        if(inputVal.value == '') {
+          // display input is empty
+          error.innerHTML = 'input  is empty';
+          inputVal.classList.add('is-invalid');
+        } else {
+          convertCurrency(parseInt(inputVal.value), from.value, to.value);
+        }
+      });
 
 });
 
