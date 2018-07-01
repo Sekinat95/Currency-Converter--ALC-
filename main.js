@@ -19,13 +19,13 @@ window.addEventListener('DOMContentLoaded', function(){
       let temp = '';
 
       Object.values(data.results).map(currency => {
-        dummy += `
+        temp += `
           <option value="${currency['id']}">${currency['id']} - ${currency['currencyName']}</option>
         `;
       });
 
-      from.innerHTML = dummy;
-      to.innerHTML = dummy;
+      from.innerHTML = temp;
+      to.innerHTML = temp ;
     })
     .catch(err => console.log(err));
 
