@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function(){
   
   const form = document.querySelector('#app-form');
   const inputVal = form.querySelector('#input-fi');
-  const output = form.querySelector('#output');
+  const display = form.querySelector('#display');
   const from = form.querySelector('#from');
   const to = form.querySelector('#to');
   const btn = form.querySelector('#convert');
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function(){
             
             // display the result
             console.log(total)
-            output.value = total;
+            display.value = total;
           } else {
             // go online and fetch from the api
             const url = `https://free.currencyconverterapi.com/api/v5/convert?q=${from_to},${to_from}&compact=ultra`;
@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function(){
     
                   // display the result
                   console.log(total)
-                  output.value = total;
+                  display.value = total;
                 }
               })
               .catch(e => {
