@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="manifest" href="manifest.json" />
    
 </head>
 <body>
@@ -32,23 +33,27 @@
                 <div class="card">
                     <div class="justify-content-center">Currency Converter</div>
                     <div class="card-body" >
-                      <div class="input-group" id="my-div" >
-                        <input id="input-fi" type="text" class="form-control"  >
-                        <select class="custom-select" id="from" >
-                          <!-- <option value="1">USD</option>
-                          <option value="2">NGN</option>
-                          <option value="3">YEN</option> -->
-                        </select>
-                          <input type="text" class="form-control  " disabled value="TO" >
-                          <select class="custom-select" id="to" >
-                            <!-- <option value="1">USD</option>
-                            <option value="2">NGN</option>
-                            <option value="3">YEN</option> -->
-                          </select>
+                      <form class="form-group" id="app-form" >
+                        <div class="input-group" id="my-div" >
                           
-                          <button id="convert" class="btn btn-secondary" type="submit" >CONVERT</button>
-                          &nbsp;&nbsp;&nbsp;&nbsp; <input id="display" type="text" value='' class="form-control" >
-                      </div>
+                              <input id="input-fi" type="text" class="form-control"  >
+                              <select class="custom-select" id="from" >
+                                <!-- <option value="1">USD</option>
+                                <option value="2">NGN</option>
+                                <option value="3">YEN</option> -->
+                              </select>
+                                <input type="text" class="form-control  " disabled value="TO" >
+                                <select class="custom-select" id="to" >
+                                  <!-- <option value="1">USD</option>
+                                  <option value="2">NGN</option>
+                                  <option value="3">YEN</option> -->
+                                </select>
+                                
+                                <button id="convert" class="btn btn-secondary" type="submit" >CONVERT</button>
+                                &nbsp;&nbsp;&nbsp;&nbsp; <input id="display" type="text" value='' class="form-control" >
+                          
+                        </div>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -83,7 +88,20 @@
   &copy;2018, sekinat yahya
 </div>
 </section>
-
+<script async>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js', {
+      scope: './'
+    }).then(reg => {
+      console.log('regisatration sucessfull');
+    }).catch(err => {
+      console.log(`Registration failed with ${err}`);
+    });
+  } else {
+    // browser does not support service worker
+  }
+</script>
+<script src="idb.js" sync></script>
 <script  src="main.js"></script>
 </body>
 </html>
