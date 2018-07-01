@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function(){
             let total = (inputVal * val.rate);
             
             // display the result
-            output.innerHTML = total;
+            output.value = total;
           } else {
             // go online and fetch from the api
             const url = `https://free.currencyconverterapi.com/api/v5/convert?q=${from_to},${to_from}&compact=ultra`;
