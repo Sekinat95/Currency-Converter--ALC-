@@ -48,6 +48,7 @@ window.addEventListener('DOMContentLoaded', function(){
             let total = (inputVal * val.rate);
             
             // display the result
+            console.log(total)
             output.value = total;
           } else {
             // go online and fetch from the api
@@ -78,6 +79,7 @@ window.addEventListener('DOMContentLoaded', function(){
                   });
     
                   // display the result
+                  console.log(total)
                   output.value = total;
                 }
               })
