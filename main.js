@@ -59,7 +59,7 @@
 window.addEventListener('DOMContentLoader', function(){
   
   const form = document.querySelector('#app-form');
-  const input = form.querySelector('#input-fi');
+  const inputVal = form.querySelector('#input-fi');
   const output = form.querySelector('#output');
   const from = form.querySelector('#from');
   const to = form.querySelector('#to');
