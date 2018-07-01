@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function(){
         const from_to = `${from}_${to}`;
         const to_from = `${to}_${from}`;
         //check from indexDB
-        dbPromise.then(function(db) {
+        databasePromise.then(function(db) {
           let tx = db.transaction('rates');
           let keyValStore = tx.objectStore('rates');
           return keyValStore.get(from_to);
@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', function(){
                   // = Math.round(total * 100) / 100;
     
                   //store in indexDB
-                  dbPromise.then(db => {
+                  databasePromise.then(db => {
                     let tx = db.transaction('rates', 'readwrite');
                     let ratesStore = tx.objectStore('rates');
     
